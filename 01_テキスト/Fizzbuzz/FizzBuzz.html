@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- ウェブページの情報 -->
+    <meta charset="UTF-8" />
+    <!-- 文字列コードの指定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- ページのタイトル -->
+  </head>
+  <body>
+    <script>
+      // このスクリプトの中にJavascriptのコードを書く
+      // let n = 0
+      const FizzBuzz = function (n) {
+        for (let i = 1; i <= n; i++) {
+          if (i % 3 === 0 && i % 5 !== 0) {
+            console.log("Fizz")
+          } else if (i % 5 === 0 && i % 3 !== 0) {
+            console.log("Buzz")
+          } else if (i % 5 === 0 && i % 3 === 0) {
+            console.log("FizzBuzz")
+          } else {
+            console.log(i)
+          }
+        }
+      }
+      FizzBuzz(100)
+    </script>
+  </body>
+</html>
